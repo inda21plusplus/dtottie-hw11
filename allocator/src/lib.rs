@@ -8,8 +8,9 @@ mod tests {
     }
 }
 
-pub mod bump;
+pub mod arena;
 pub mod linked;
+pub mod buddy;
 
 pub struct MutualExclusion<A> {
     contobj: spin::Mutex<A>,
